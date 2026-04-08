@@ -1,1 +1,32 @@
-@import "tailwindcss";
+@import url('https://googleapis.com');
+@import 'tailwindcss';
+
+@theme {
+  --color-light: #fdfdfd;
+  --color-deep: #210a5e4d;
+  --color-neutral: #717680;
+  --color-clr-primary: #421abc;
+
+  --font-inter: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+.body {
+  @apply bg-black text-light font-inter;
+}
+
+.navbar {
+  @apply flex justify-between py-6 px-4 h-16 content-center md:px-35;
+}
+
+.logo {
+  @apply text-2xl font-bold tracking-normal;
+}
+.li {
+  @apply hover:text-light transition-colors;
+}
+
+@utility btn-primary {
+  @apply bg-clr-primary rounded-full text-center;
+  &:hover {
+    @apply bg-blue-700;
+  }
+}

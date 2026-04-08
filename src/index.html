@@ -6,11 +6,60 @@
     <title>Assignment 3 - Landing Page</title>
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="body">
     <!-- ========== NAVBAR ========== -->
-
+    <nav class="navbar">
+      <div class="logo">Tech.</div>
+      <div class="hidden md:flex">
+        <ul class="flex gap-3 font-normal text-sm">
+          <li>
+            <a href="#" class="li">About</a>
+          </li>
+          <li>
+            <a href="#" class="li">Service</a>
+          </li>
+          <li>
+            <a href="#" class="li">Our Work</a>
+          </li>
+          <li>
+            <a href="#" class="li">Team</a>
+          </li>
+        </ul>
+      </div>
+      <div class="hidden md:block">
+        <button class="w-40 h-11 btn-primary">Contact Us</button>
+      </div>
+      <div class="md:hidden">
+        <img src="../assets/images/menu-01.png" alt="Tech." />
+      </div>
+    </nav>
     <!-- ========== HERO SECTION ========== -->
+    <section
+      class="grid bg-linear-to-b/display-p3 from-black to-deep to-30% min-h-screen text-left h-180 py-10 px-5 gap-4.5"
+    >
+      <div class="grid gap-6">
+        <div class="grid">
+          <p class="text-5xl font-bold tracking-tight mb-4">
+            Build with the<span class="italic font-bold"> Future.</span>
+          </p>
+          <p
+            class="text-neutral font-normal text-base/[30px] tracking-[-0.03em]"
+          >
+            From building sleek websites and mobile apps to integrating AI
+            solutions, we help brands turn ideas into powerful digital
+            experiences that connect, engage, and scale.
+          </p>
+        </div>
+        <div class="block">
+          <button class="w-88.5 h-12 p-2 gap-1 btn-primary">Let's Talk</button>
+        </div>
+      </div>
+      <div class="relative bottom-7">
+        <img src="../assets/images/Group 15861.png" alt="Tech." />
+      </div>
+    </section>
 
+    <section></section>
     <!-- ========== FOOTER ========== -->
   </body>
 </html>
