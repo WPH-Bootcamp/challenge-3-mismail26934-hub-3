@@ -6,27 +6,43 @@
   --color-deep: #210a5e4d;
   --color-neutral: #717680;
   --color-clr-primary: #421abc;
+  --color-clr-hover: #101828;
+  --text-display-3xl: 56px;
+  --text-display-3xl--line-height: 68px;
+  --text-display-2xl: 20px;
+  --text-display-2xl--line-height: 34px;
 
   --font-inter: 'Inter', ui-sans-serif, system-ui, sans-serif;
 }
 .body {
   @apply bg-black text-light font-inter;
 }
-
+.header {
+  @apply w-full h-16 md:px-35 md:h-21 content-center;
+}
+.header-div {
+  @apply max-w-98.5 px-6 py-4 md:max-w-360 mx-auto flex justify-between items-center;
+}
 .navbar {
-  @apply flex justify-between py-6 px-4 h-16 content-center md:px-35;
+  @apply hidden md:flex items-center gap-3;
 }
-
 .logo {
-  @apply text-2xl font-bold tracking-normal;
+  @apply text-2xl font-bold tracking-normal md:gap-2;
 }
-.li {
-  @apply hover:text-light transition-colors;
+.ul {
+  @apply hidden gap-3 font-normal text-sm md:flex md:gap-1.5 items-center;
 }
 
 @utility btn-primary {
   @apply bg-clr-primary rounded-full text-center;
   &:hover {
     @apply bg-blue-700;
+  }
+}
+
+@utility li {
+  @apply md:px-4 md:py-2 md:rounded-full;
+  &:hover {
+    @apply bg-clr-hover;
   }
 }

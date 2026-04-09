@@ -8,58 +8,71 @@
   </head>
   <body class="body">
     <!-- ========== NAVBAR ========== -->
-    <nav class="navbar">
-      <div class="logo">Tech.</div>
-      <div class="hidden md:flex">
-        <ul class="flex gap-3 font-normal text-sm">
-          <li>
-            <a href="#" class="li">About</a>
-          </li>
-          <li>
-            <a href="#" class="li">Service</a>
-          </li>
-          <li>
-            <a href="#" class="li">Our Work</a>
-          </li>
-          <li>
-            <a href="#" class="li">Team</a>
-          </li>
-        </ul>
+    <header class="header">
+      <div class="header-div">
+        <h1 class="logo">Tech.</h1>
+        <!-- Desktop Menu -->
+        <nav class="navbar">
+          <a href="#" class="li">About</a>
+          <a href="#" class="li">Service</a>
+          <a href="#" class="li">Our Work</a>
+          <a href="#" class="li">Team</a>
+        </nav>
+        <button class="hidden md:block btn-primary w-40 h-11">
+          Contact Us
+        </button>
+        <!-- Mobile Button -->
+        <button id="menu-btn" class="md:hidden">
+          <img src="../assets/images/menu-01.png" alt="Tech." />
+        </button>
       </div>
-      <div class="hidden md:block">
-        <button class="w-40 h-11 btn-primary">Contact Us</button>
+      <!-- Mobile Menu -->
+      <div
+        id="menu"
+        class="hidden flex-col bg-black px-6 pb-6 space-y-4 md:hidden"
+      >
+        <a href="#" class="li">About</a>
+          <a href="#" class="li">Service</a>
+          <a href="#" class="li">Our Work</a>
+          <a href="#" class="li">Team</a>
+        <button class="hidden md:block btn-primary w-40 h-11">
       </div>
-      <div class="md:hidden">
-        <img src="../assets/images/menu-01.png" alt="Tech." />
-      </div>
-    </nav>
+    </header>
     <!-- ========== HERO SECTION ========== -->
+    <!-- Hero -->
     <section
-      class="grid bg-linear-to-b/display-p3 from-black to-deep to-30% min-h-screen text-left h-180 py-10 px-5 gap-4.5"
+      class="bg-linear-to-b/display-p3 from-black to-deep to-30% min-h-screen text-left h-180 md:h-175 py-10 
+      px-5 gap-4.5 md:px-35"
     >
-      <div class="grid gap-6">
-        <div class="grid">
-          <p class="text-5xl font-bold tracking-tight mb-4">
-            Build with the<span class="italic font-bold"> Future.</span>
-          </p>
-          <p
-            class="text-neutral font-normal text-base/[30px] tracking-[-0.03em]"
-          >
-            From building sleek websites and mobile apps to integrating AI
-            solutions, we help brands turn ideas into powerful digital
-            experiences that connect, engage, and scale.
-          </p>
+      <div
+        class="grid md:grid-cols-2 items-center"
+      >
+        <div>
+          <h2 class="text-5xl text-left font-bold tracking-tight mb-4 md:text-display-3xl md:w-auto md:tracking-[-0.03em]">
+            Build with the <span class="italic">Future.</span>
+          </h2>
+          <p class="text-neutral text-left font-normal text-base/[30px] tracking-[-0.03em] w-auto md:text-display-2xl">
+            From building sleek websites and mobile apps to integrating AI solutions, 
+            we help brands turn ideas into powerful digital experiences that connect, 
+            engage, and scale.
+          </p>  
+          <button class="mt-8 p-2 btn-primary w-[354px] md:w-[300px]">
+            Let's Talk
+          </button>
         </div>
-        <div class="block">
-          <button class="w-88.5 h-12 p-2 gap-1 btn-primary">Let's Talk</button>
+        <div class="w-[306.47271728515625px] h-auto md:w-auto md:h-auto">
+          <img src="../assets/images/Group 15861.png" class="" />
         </div>
-      </div>
-      <div class="relative bottom-7">
-        <img src="../assets/images/Group 15861.png" alt="Tech." />
       </div>
     </section>
-
-    <section></section>
     <!-- ========== FOOTER ========== -->
+      <!-- SCRIPT -->
+    <script>
+      const btn = document.getElementById('menu-btn');
+      const menu = document.getElementById('menu');
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    </script>
   </body>
 </html>
