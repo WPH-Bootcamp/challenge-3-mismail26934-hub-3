@@ -1,1 +1,133 @@
-@import "tailwindcss";
+@import url('https://googleapis.com');
+@import 'tailwindcss';
+
+@theme {
+  --color-light: #fdfdfd;
+  --color-deep: #210a5e4d;
+  --color-neutral: #717680;
+  --color-clr-primary: #421abc;
+  --color-clr-hover: #101828;
+  --color-clr-border: #181d27;
+  --color-clr-input: #252b37;
+  --text-display-3xl: 56px;
+  --text-display-3xl--line-height: 68px;
+  --text-display-xl: 40px;
+  --text-display-xl--line-height: 56px;
+
+  --text-display-md: 32px;
+  --text-display-md--line-height: 42px;
+
+  --text-display-sm: 28px;
+  --text-display-sm--line-height: 38px;
+
+  --text-display-lg: 18px;
+  --text-display-lg--line-height: 28px;
+
+  --text-display-2xl: 20px;
+  --text-display-2xl--line-height: 34px;
+
+  --text-text-md: 16px;
+  --text-text-md--line-height: 30px;
+
+  --text-text-sd: 14px;
+  --text-text-sd--line-height: 28px;
+
+  --text-text-lg: 18px;
+  --text-text-lg--line-height: 32px;
+
+  --text-text-xs: 12px;
+  --text-text-xs--line-height: 24px;
+
+  --font-inter: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+.body {
+  @apply bg-black text-light font-inter max-w-360;
+}
+.header {
+  @apply w-full h-16 md:px-35 md:h-21 content-center;
+}
+.header-div {
+  @apply max-w-98.5 px-6 py-4 md:max-w-360 mx-auto flex justify-between items-center;
+}
+.navbar {
+  @apply hidden md:flex items-center gap-3;
+}
+.logo {
+  @apply text-2xl font-bold tracking-normal md:gap-2;
+}
+.ul {
+  @apply hidden gap-3 font-normal text-sm md:flex md:gap-1.5 items-center;
+}
+.title-h3 {
+  @apply text-light font-bold text-display-sm md:text-display-xl;
+}
+.card-div {
+  @apply flex-row gap-5 p-4 md:p-6 border border-clr-border rounded-xl hover:border-purple-500;
+}
+.icon-card {
+  @apply flex justify-center items-center content-center;
+}
+.size-icon {
+  @apply md:w-12 md:h-12;
+}
+.card-title {
+  @apply text-text-lg md:text-display-2xl font-bold md:tracking-[-0.03em];
+}
+
+.card-subtitle {
+  @apply text-neutral text-text-sd md:tracking-[-0.03em];
+}
+
+.img-portofolio {
+  @apply rounded-2xl w-90.25 h-90.25 md:w-93.25 md:h-93.25;
+}
+.p-portofolio {
+  @apply text-text-md md:text-text-lg text-neutral;
+}
+.div-portofolio {
+  @apply grid md:grid-cols-3 gap-5 text-left;
+}
+.card-portofolio {
+  @apply grid gap-3.25;
+}
+.subtitle-portofolio {
+  @apply text-text-md font-bold tracking-[-0.02em];
+}
+
+.card-div-team {
+  @apply grid gap-3 md:gap-5;
+}
+.card-subtitle-team {
+  @apply grid gap-1;
+}
+.title-team {
+  @apply text-text-md font-bold md:text-display-2xl;
+}
+.jod-team {
+  @apply text-text-sd text-neutral md:text-text-md;
+}
+
+.txt-input {
+  @apply h-12 px-4 py-2  border border-clr-input rounded-xl;
+}
+
+.lbl-input {
+  @apply text-text-sd font-bold text-left w-88.25;
+}
+
+.div-input {
+  @apply grid gap-1.5 h-20.5;
+}
+@utility btn-primary {
+  @apply bg-clr-primary rounded-full text-center;
+  &:hover {
+    @apply bg-blue-700;
+  }
+}
+
+@utility li {
+  @apply md:px-4 md:py-2 md:rounded-full;
+  &:hover {
+    @apply bg-clr-hover;
+  }
+}
