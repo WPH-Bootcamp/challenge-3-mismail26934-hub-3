@@ -62,7 +62,7 @@
   @apply text-light font-bold text-display-sm md:text-display-xl;
 }
 .card-div {
-  @apply flex-row gap-[20px] p-[16px] md:p-[24px] border border-clr-border rounded-xl hover:border-purple-500;
+  @apply flex-row gap-5 p-4 md:p-6 border border-clr-border rounded-xl hover:border-purple-500;
 }
 .icon-card {
   @apply flex justify-center items-center content-center;
@@ -79,26 +79,26 @@
 }
 
 .img-portofolio {
-  @apply rounded-2xl w-[361px] h-[361px] md:w-[373px] md:h-[373px];
+  @apply rounded-2xl w-90.25 h-90.25 md:w-93.25 md:h-93.25;
 }
 .p-portofolio {
   @apply text-text-md md:text-text-lg text-neutral;
 }
 .div-portofolio {
-  @apply grid md:grid-cols-3 gap-[20px] text-left;
+  @apply grid md:grid-cols-3 gap-5 text-left;
 }
 .card-portofolio {
-  @apply grid gap-[13px];
+  @apply grid gap-3.25;
 }
 .subtitle-portofolio {
   @apply text-text-md font-bold tracking-[-0.02em];
 }
 
 .card-div-team {
-  @apply grid gap-[12px] md:gap-[20px];
+  @apply grid gap-3 md:gap-5;
 }
 .card-subtitle-team {
-  @apply grid gap-[4px];
+  @apply grid gap-1;
 }
 .title-team {
   @apply text-text-md font-bold md:text-display-2xl;
@@ -108,15 +108,15 @@
 }
 
 .txt-input {
-  @apply h-[48px] px-[16px] py-[8px]  border border-clr-input rounded-xl;
+  @apply h-12 px-4 py-2  border border-clr-input rounded-xl;
 }
 
 .lbl-input {
-  @apply text-text-sd font-bold text-left w-[353px];
+  @apply text-text-sd font-bold text-left w-88.25;
 }
 
 .div-input {
-  @apply grid gap-[6px] h-[82px];
+  @apply grid gap-1.5 h-20.5;
 }
 @utility btn-primary {
   @apply bg-clr-primary rounded-full text-center;
