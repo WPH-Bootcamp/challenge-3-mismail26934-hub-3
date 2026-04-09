@@ -7,15 +7,31 @@
   --color-neutral: #717680;
   --color-clr-primary: #421abc;
   --color-clr-hover: #101828;
+  --color-clr-border: #181d27;
   --text-display-3xl: 56px;
   --text-display-3xl--line-height: 68px;
+  --text-display-xl: 40px;
+  --text-display-xl--line-height: 56px;
+
+  --text-display-md: 32px;
+  --text-display-md--line-height: 42px;
+
+  --text-display-sm: 28px;
+  --text-display-sm--line-height: 38px;
+
+  --text-display-lg: 18px;
+  --text-display-lg--line-height: 28px;
+
   --text-display-2xl: 20px;
   --text-display-2xl--line-height: 34px;
+
+  --text-text-md: 16px;
+  --text-text-md--line-height: 30px;
 
   --font-inter: 'Inter', ui-sans-serif, system-ui, sans-serif;
 }
 .body {
-  @apply bg-black text-light font-inter;
+  @apply bg-black text-light font-inter max-w-360;
 }
 .header {
   @apply w-full h-16 md:px-35 md:h-21 content-center;
@@ -31,6 +47,25 @@
 }
 .ul {
   @apply hidden gap-3 font-normal text-sm md:flex md:gap-1.5 items-center;
+}
+.title-h3 {
+  @apply text-light font-bold text-display-sm md:text-display-xl;
+}
+.card-div {
+  @apply grid items-center text-center gap-[20px] p-[24px] border border-clr-border rounded-xl hover:border-purple-500;
+}
+.icon-card {
+  @apply flex items-center justify-center;
+}
+.size-icon {
+  @apply md:w-12 md:h-12;
+}
+.card-title {
+  @apply text-display-2xl font-bold md:tracking-[-0.03em];
+}
+
+.card-subtitle {
+  @apply text-neutral text-text-md md:tracking-[-0.03em];
 }
 
 @utility btn-primary {
