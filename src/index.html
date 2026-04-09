@@ -6,11 +6,298 @@
     <title>Assignment 3 - Landing Page</title>
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="body">
     <!-- ========== NAVBAR ========== -->
-
+    <header class="header">
+      <div class="header-div">
+        <h1 class="logo">Tech.</h1>
+        <!-- Desktop Menu -->
+        <nav class="navbar">
+          <a href="#" class="li">About</a>
+          <a href="#" class="li">Service</a>
+          <a href="#" class="li">Our Work</a>
+          <a href="#" class="li">Team</a>
+        </nav>
+        <button
+          class="hidden md:block btn-primary md:w-40 md:h-11 font-semibold"
+        >
+          Contact Us
+        </button>
+        <!-- Mobile Button -->
+        <button id="menu-btn" class="md:hidden">
+          <img id="menu-icon" src="../assets/images/menu-01.png" alt="Menu" />
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="menu" class="hidden md:hidden h-230.5 bg-black fixed w-full">
+        <div class="header-div">
+          <div class="grid w-90.25 h-60 z-50 gap-3">
+            <a href="#" class="li rounded-full">About</a>
+            <a href="#" class="li rounded-full">Service</a>
+            <a href="#" class="li rounded-full">Our Work</a>
+            <a href="#" class="li rounded-full">Team</a>
+            <button class="btn-primary p-2 h-12 font-semibold">
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
     <!-- ========== HERO SECTION ========== -->
+    <section
+      class="bg-linear-to-b/display-p3 from-black to-deep to-30% min-h-screen text-left h-180 md:h-175 py-10 px-5 gap-4.5 md:px-35"
+    >
+      <div class="grid md:grid-cols-2 items-center">
+        <div>
+          <h2
+            class="text-5xl text-left font-bold tracking-tight mb-4 md:text-display-3xl md:w-auto md:tracking-[-0.03em]"
+          >
+            Build with the <span class="italic">Future.</span>
+          </h2>
+          <p
+            class="text-neutral text-left font-normal text-base/[30px] tracking-[-0.03em] w-auto md:text-display-2xl"
+          >
+            From building sleek websites and mobile apps to integrating AI
+            solutions, we help brands turn ideas into powerful digital
+            experiences that connect, engage, and scale.
+          </p>
+          <button
+            class="mt-8 p-2 btn-primary md:h-12 w-88.5 md:w-75 font-semibold"
+          >
+            Let's Talk
+          </button>
+        </div>
+        <div class="w-[306.47271728515625px] h-auto md:w-auto md:h-auto">
+          <img src="../assets/images/Group 15861.png" class="" />
+        </div>
+      </div>
+    </section>
+    <!-- WHO WE ARE -->
+    <section class="grid text-center py-10 gap-4 md:gap-8 md:py-20 md:h-83">
+      <h3 class="title-h3">Who We Are</h3>
+      <p
+        class="text-neutral font-semibold text-display-lg md:text-display-md md:tracking-[-0.02em]"
+      >
+        We're a group of tech students trained in
+        <span class="text-light">building real-world digital products</span>.
+        <br />
+        From coding to design, we
+        <span class="text-light"
+          >craft modern solutions for modern problems</span
+        >.
+      </p>
+    </section>
 
+    <!-- SERVICES -->
+    <section
+      class="grid text-center gap-6 w-95 md:w-auto px-4 py-10 md:px-35 md:py-20 md:gap-16"
+    >
+      <div
+        class="grid items-center gap-2 h-26 w-87 md:[16px] md:w-auto md:h-auto"
+      >
+        <h3 class="title-h3">What We Do</h3>
+        <p
+          class="text-text-sd md:w-auto md:text-display-lg text-neutral md:tracking-[-0.03em]"
+        >
+          We offer simple tech solutions to help your ideas grow.
+        </p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-5">
+        <div class="card-div">
+          <div class="icon-card">
+            <img src="../assets/icons/web_dev.png" alt="" class="size-icon" />
+          </div>
+          <h4 class="card-title">Web Development</h4>
+          <p class="card-subtitle">
+            Modern websites using HTML, CSS, JavaScript, and frameworks.
+          </p>
+        </div>
+        <div class="card-div">
+          <div class="icon-card">
+            <img src="../assets/icons/app_dev.png" alt="" class="size-icon" />
+          </div>
+          <h4 class="card-title">App Development</h4>
+          <p class="card-subtitle">
+            Mobile and desktop apps tailored for your needs.
+          </p>
+        </div>
+        <div class="card-div">
+          <div class="icon-card">
+            <img src="../assets/icons/AI_int.png" alt="" class="size-icon" />
+          </div>
+          <div>
+            <h4 class="card-title">AI Integration</h4>
+            <p class="card-subtitle">
+              Smart solutions using AI-powered tools and automation.
+            </p>
+          </div>
+        </div>
+        <div class="card-div">
+          <div class="icon-card">
+            <img src="../assets/icons/ui-ux.png" alt="" class="size-icon" />
+          </div>
+          <h4 class="card-title">UI/UX Design</h4>
+          <p class="card-subtitle">
+            Clean and functional designs for better user experience.
+          </p>
+        </div>
+        <div class="card-div">
+          <div class="icon-card">
+            <img src="../assets/icons/lp_design.png" alt="" class="size-icon" />
+          </div>
+          <h4 class="card-title">Landing Page Design</h4>
+          <p class="card-subtitle">
+            High-converting landing pages for your product or business.
+          </p>
+        </div>
+        <div class="card-div">
+          <div class="icon-card">
+            <img src="../assets/icons/CMS_int.png" alt="" class="size-icon" />
+          </div>
+          <h4 class="card-title">CMS Integration</h4>
+          <p class="card-subtitle">
+            Easy-to-manage websites with WordPress or Webflow.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- PORTFOLIO -->
+    <section
+      class="grid w-98.25 md:w-auto justify-center text-center px-5 py-10 gap-6 md:gap-16"
+    >
+      <div class="grid gap-4 h-26">
+        <h3 class="title-h3">Our Work</h3>
+        <p class="p-portofolio">
+          See what we’ve built with passion and purpose
+        </p>
+      </div>
+      <div class="div-portofolio">
+        <div class="card-portofolio">
+          <img src="../assets/images/portofolio-1.png" class="img-portofolio" />
+          <p class="subtitle-portofolio">Portofolio 1</p>
+        </div>
+        <div class="card-portofolio">
+          <img src="../assets/images/portofolio-2.png" class="img-portofolio" />
+          <p class="subtitle-portofolio">Portofolio 2</p>
+        </div>
+        <div class="card-portofolio">
+          <img src="../assets/images/portofolio-3.png" class="img-portofolio" />
+          <p class="subtitle-portofolio">Portofolio 3</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="grid text-center gap-8">
+      <div class="grid gap-8px h-26">
+        <h3 class="title-h3">Meet the Team</h3>
+        <p
+          class="text-text-md tracking-tracking-[-0.03em] text-neutral md:text-text-lg"
+        >
+          A group of future-ready tech makers.
+        </p>
+      </div>
+      <div
+        class="grid grid-cols-2 md:grid-cols-4 gap-8 px-10 py-5 md:mx-auto md:56px"
+      >
+        <div class="card-div-team">
+          <img src="../assets/images/project-manager.png" class="size-auto" />
+          <div class="card-subtitle-team">
+            <h4 class="title-team">Jasper Kim</h4>
+            <p class="jod-team">Project Manager</p>
+          </div>
+        </div>
+        <div class="card-div-team">
+          <img src="../assets/images/fs-developer.png" class="size-auto" />
+          <div class="card-subtitle-team">
+            <h4 class="title-team">Alex Jonathan</h4>
+            <p class="jod-team">Full-stack Developer</p>
+          </div>
+        </div>
+        <div class="card-div-team">
+          <img src="../assets/images/ui-ux-designer.png" class="size-auto" />
+          <div class="card-subtitle-team">
+            <h4 class="title-team">Mario Lopez</h4>
+            <p class="jod-team">UI/UX Designer</p>
+          </div>
+        </div>
+        <div class="card-div-team">
+          <img src="../assets/images/data-scientis.png" class="size-auto" />
+          <div class="card-subtitle-team">
+            <h4 class="title-team">Jasper Kim</h4>
+            <p class="jod-team">Data Scientist</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT -->
+    <section
+      class="grid text-center w-98.25 gap-6 px-5 py-10 md:px-35 md:py-20"
+    >
+      <div class="grid items-center gap-2 h-19 md:h-26 md:w-290">
+        <h3 class="text-display-sm font-bold md:text-display-xl">
+          Let's Collaborate
+        </h3>
+        <p class="text-text-md text-neutral md:text-display-lg">
+          Need a tech team? We're ready to help
+        </p>
+      </div>
+      <div class="grid items-center justify-center gap-8">
+        <form class="md:w-148">
+          <div class="div-input">
+            <p class="lbl-input">Name</p>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              class="txt-input"
+            />
+          </div>
+          <div class="div-input">
+            <p class="lbl-input">Email</p>
+            <input
+              type="text"
+              placeholder="Enter your email"
+              class="txt-input"
+            />
+          </div>
+          <div class="div-input">
+            <p class="lbl-input">Message</p>
+            <textarea
+              placeholder="Enter your message"
+              class="px-4 py-2 border border-clr-input rounded-xl h-33.5"
+            ></textarea>
+          </div>
+        </form>
+        <div class="mt-22 btn-primary p-2 h-11">
+          <button>Send</button>
+        </div>
+      </div>
+    </section>
     <!-- ========== FOOTER ========== -->
+    <footer>
+      <p
+        class="text-center text-neutral tracking-[-0.03em] border border-clr-border text-text-xs md:text-text-md h-18 md:h-19.5 px-2 py-6"
+      >
+        © 2025 Web Programming Hack. All rights reserved.
+      </p>
+    </footer>
+    <!-- SCRIPT -->
+    <script>
+      const btn = document.getElementById('menu-btn');
+      const menu = document.getElementById('menu');
+      const menuIcon = document.getElementById('menu-icon');
+      // Path gambar (pastikan path-nya benar)
+      const burgerIcon = '../assets/images/menu-01.png';
+      const closeIcon = '../assets/images/x-close.png';
+
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+      if (menu.classList.contains('hidden')) {
+        menuIcon.src = burgerIcon;
+      } else {
+        menuIcon.src = closeIcon;
+      }
+    </script>
   </body>
 </html>
