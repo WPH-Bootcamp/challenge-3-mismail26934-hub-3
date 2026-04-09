@@ -72,8 +72,10 @@
 
     <!-- SERVICES -->
     <section class="grid text-center gap-[24px] w-[380px] md:w-auto px-[16px] py-[40px] md:px-[140px] md:py-[80px] md:gap-[64px]">
-      <h3 class="title-h3">What We Do</h3>
-      <p class="text-text-sd md:text-display-lg text-neutral md:tracking-[-0.03em]">We offer simple tech solutions to help your ideas grow.</p>
+      <div class="grid items-center gap-[8px] h-[104px] w-[348px] md:[16px] md:w-auto md:h-auto">
+        <h3 class="title-h3">What We Do</h3>
+        <p class="text-text-sd md:w-auto md:text-display-lg text-neutral md:tracking-[-0.03em]">We offer simple tech solutions to help your ideas grow.</p>
+      </div>
       <div class="grid grid-cols-2 md:grid-cols-3 gap-[16px] md:gap-[20px]">
         <div class="card-div">
           <div class="icon-card"><img src="../assets/icons/web_dev.png" alt="" class="size-icon"></div>
@@ -111,8 +113,10 @@
     </section>
     <!-- PORTFOLIO -->
     <section class="grid w-[393px] md:w-auto justify-center text-center px-[20px] py-[40px] gap-[24px] md:gap-[64px]">
-      <h3 class="title-h3">Our Work</h3>
-      <p class="p-portofolio">See what we’ve built with passion and purpose</p>
+      <div class="grid gap-[16px] h-[104px]">
+        <h3 class="title-h3">Our Work</h3>
+        <p class="p-portofolio">See what we’ve built with passion and purpose</p>
+      </div>
       <div class="div-portofolio">
         <div class="card-portofolio">
           <img src="../assets/images/portofolio-1.png" class="img-portofolio" />
@@ -131,7 +135,7 @@
 
     <!-- TEAM -->
     <section class="grid text-center gap-[32px]">
-      <div class="grid gap-8px">
+      <div class="grid gap-8px h-[104px]">
         <h3 class="title-h3">Meet the Team</h3>
       <p class="text-text-md tracking-tracking-[-0.03em] text-neutral md:text-text-lg">A group of future-ready tech makers.</p>
       </div>
@@ -167,16 +171,36 @@
       </div>
     </section>    
     <!-- CONTACT -->
-    <section class="py-16 px-6 text-center">
-      <h3 class="text-2xl font-semibold mb-6">Let's Collaborate</h3>
-      <form class="max-w-xl mx-auto space-y-4">
-        <input type="text"placeholder="Name"class="w-full p-3 bg-black border border-gray-700 rounded-lg"/>
-        <input type="email" placeholder="Email" class="w-full p-3 bg-black border border-gray-700 rounded-lg"/>
-        <textarea placeholder="Message" class="w-full p-3 bg-black border border-gray-700 rounded-lg"></textarea>
-        <button class="bg-purple-600 w-full py-3 rounded-full">Send</button>
+    <section class="grid text-center px-[20px] py-[40px] md:px-[140px] md:py-[80px] w-[393px] gap-[24px] px-[20px] py-[40px] md:px-[140px] md:py-[80px] ">
+      <div class="grid items-center gap-[8px] h-[76px] md:h-[104px] md:w-[1160px]">
+        <h3 class="text-display-sm font-bold md:text-display-xl">Let's Collaborate</h3>
+        <p class="text-text-md text-neutral md:text-display-lg">Need a tech team? We're ready to help</p>
+      </div>
+      <div class="grid items-center justify-center gap-[32px]">
+        <form class="md:w-[592px]">
+        <div class="div-input">
+          <p class="lbl-input">Name</p>
+          <input type="text" placeholder="Enter your name"class="txt-input"/>
+        </div>
+        <div class="div-input">
+          <p class="lbl-input">Email</p>
+          <input type="text" placeholder="Enter your email" class="txt-input"/>
+        </div>
+        <div class="div-input">
+          <p class="lbl-input">Message</p>
+          <textarea placeholder="Enter your message" class="px-[16px] py-[8px] border border-clr-input rounded-xl h-[134px]"></textarea>
+        </div>
       </form>
+      <div class="mt-22 btn-primary p-[8px] h-[44px]">
+        <button>Send</button>
+      </div>      
+      </div>
     </section>
     <!-- ========== FOOTER ========== -->
+    <footer>
+      <p class="text-center  text-neutral tracking-[-0.03em] border border-clr-border text-text-xs md:text-text-md h-[72px] md:h-[78px] px-[8px] py-[24px]">
+      © 2025 Web Programming Hack. All rights reserved.
+    </footer>
       <!-- SCRIPT -->
     <script>
       const btn = document.getElementById('menu-btn');
